@@ -1,16 +1,17 @@
 #include "gamemenu.h"
 #include "ui_gamemenu.h"
-#include "registration.h"
 
-gameMenu::gameMenu(QWidget *parent) :
+GameMenu::GameMenu(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::gameMenu)
+    ui(new Ui::GameMenu)
 {
     ui->setupUi(this);
-
+    connect(ui->exitB, &QPushButton::clicked, [&]{
+        close();
+    });
 }
 
-gameMenu::~gameMenu()
+GameMenu::~GameMenu()
 {
     delete ui;
 }

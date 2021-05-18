@@ -2,10 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QLabel>
-#include <QMessageBox>
-#include "registration.h"
-#include "login.h"
+#include "signin.h"
+#include "signup.h"
+#include "useraccount.h"
+#include "gamemenu.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,18 +19,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-
-private slots:
-
-
-
-    void on_Enter_clicked();
-
-    void on_SignUp_clicked();
-
-    void on_LogIn_clicked();
-
 private:
     Ui::MainWindow *ui;
+    UserAccount *account;
+    GameMenu menu;
 };
 #endif // MAINWINDOW_H

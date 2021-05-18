@@ -2,24 +2,21 @@
 #define GAMEMENU_H
 
 #include <QDialog>
-#include "registration.h"
-#include <iostream>
 
 namespace Ui {
-class gameMenu;
+class GameMenu;
 }
 
-class gameMenu : public QDialog
+class GameMenu : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit gameMenu(QWidget *parent = nullptr);
-    ~gameMenu();
-
+    explicit GameMenu(QWidget *parent = nullptr);
+    ~GameMenu();
 
 private:
-    Ui::gameMenu *ui;
+    Ui::GameMenu *ui;
 };
 
 #endif // GAMEMENU_H
