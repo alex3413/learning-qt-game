@@ -20,7 +20,8 @@ Registration::~Registration()
 
 void Registration::on_regB_clicked()
 {
-    if(ui->nameEdit_3->text() == "" || ui->passwordEdit_7->text() == "" || ui->mailEdit->text() == "" || ui->passwordSEdit->text() == "") {
+    QString login = ui->nameEdit_3->text();
+    if(login == "" || ui->passwordEdit_7->text() == "" || ui->mailEdit->text() == "" || ui->passwordSEdit->text() == "") {
         QMessageBox::warning(this, "Error!", "все строчки регистрации должны быть заполнены!!!");
         Registration w;
         w.setModal(true);
