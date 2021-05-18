@@ -106,14 +106,14 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_5">
      <item>
-      <widget class="QLabel" name="name">
+      <widget class="QLabel" name="nameLabel">
        <property name="text">
         <string>Login          </string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="nameEdit_3">
+      <widget class="QLineEdit" name="nameText">
        <property name="text">
         <string/>
        </property>

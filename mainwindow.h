@@ -22,10 +22,6 @@ public:
 
 private slots:
 
-
-
-    void on_Enter_clicked();
-
     void on_SignUp_clicked();
 
     void on_LogIn_clicked();

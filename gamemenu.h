@@ -15,11 +15,15 @@ class gameMenu : public QDialog
 
 public:
     explicit gameMenu(QWidget *parent = nullptr);
+             gameMenu(QString *name, QWidget *parent = nullptr);
     ~gameMenu();
 
+             QString *getName() const;
+             void setName(QString *value);
 
-private:
-    Ui::gameMenu *ui;
-};
+    private:
+             Ui::gameMenu *ui;
+             QString *name;
+    };
 
 #endif // GAMEMENU_H

@@ -18,7 +18,7 @@ public:
     explicit Registration(QWidget *parent = nullptr);
     ~Registration();
 
-    QString name;
+
 
 
 private slots:
@@ -30,6 +30,7 @@ private slots:
 
 private:
     Ui::Registration *ui;
+    QString name;
 };
 
 #endif // REGISTRATION_H
