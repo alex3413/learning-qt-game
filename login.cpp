@@ -6,7 +6,7 @@ LogIn::LogIn(QWidget *parent) :
     ui(new Ui::LogIn)
 {
     ui->setupUi(this);
-    ui->
+
 }
 
 LogIn::~LogIn()
