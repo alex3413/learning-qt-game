@@ -29,6 +29,6 @@ Learn developing game
  далее открываем bash
  ![image](https://user-images.githubusercontent.com/43061445/119116543-041b6480-ba31-11eb-937e-1fa7c13811c3.png)
 пишем  команду
-git push origin <имя своей удаленной ветки>:<имя своей локальной ветки>
+git push origin <имя своей удаленной ветки> <имя своей локальной ветки>
 ![image](https://user-images.githubusercontent.com/43061445/119118398-d1726b80-ba32-11eb-8486-301b378a7ff9.png)
 
