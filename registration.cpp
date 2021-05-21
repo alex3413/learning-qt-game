@@ -25,7 +25,7 @@ void Registration::on_regB_clicked()
     QString password = ui->passwordEdit_7->text();
     QString passwordConfirm = ui->passwordSEdit->text();
     QString email = ui->mailEdit->text();
-    Account player(login, password, email);
+
      QregistrationService.confirmregistration(&player, passwordConfirm);
     QRegularExpression nameRegexp("^[A-Za-z]{1}+([A-Za-z0-9-]{1,18})+([A-Za-z0-9]{1})$");
     QRegularExpression passwordRegexp("(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}");
